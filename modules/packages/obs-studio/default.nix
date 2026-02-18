@@ -9,5 +9,5 @@ in
       package = pkgs.obs-studio;
       plugins = [ obs-plugins.obs-multi-rtmp obs-plugins.obs-vkcapture ];
     };
-  }
+  };
 }

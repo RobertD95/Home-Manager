@@ -2,7 +2,7 @@
 {
   imports = [
     ./hyprland.nix
-    ./packages
-    ./launchers
+    # ./packages
+    # ./launchers
   ];
 }

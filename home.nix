@@ -3,6 +3,8 @@
 {
   imports = [
     ./modules
+    ./modules/packages
+    ./modules/launchers
   ];
   nixpkgs.config.allowUnfree = true;
   home.username = "robby";
