@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 let 
   obs-plugins = pkgs.obs-studio-plugins;
 in 
