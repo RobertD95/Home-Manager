@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./modules/imports.nix
+    ./modules
   ];
   nixpkgs.config.allowUnfree = true;
   home.username = "robby";
