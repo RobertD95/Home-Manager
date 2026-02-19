@@ -10,12 +10,12 @@
 	gtk = {
 		enable = true;
 		theme = {
-			package = pkgs.breeze-gtk; # Breeze GTK theme package
+			package = pkgs.kdePackages.breeze-gtk; # Breeze GTK theme package
 			name = "Breeze Dark";           # Use Breeze theme
 		};
 		iconTheme = {
-			package = pkgs.breeze-icons; # Breeze icons package
-			name = "Breeze";             # Breeze icon theme
+			package = pkgs.kdePackages.breeze-icons; # Breeze icons package
+			name = "Breeze Dark";             # Breeze icon theme
 		};
   		font = {
 		name = "Sans";
