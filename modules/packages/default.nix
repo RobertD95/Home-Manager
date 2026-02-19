@@ -4,6 +4,7 @@
     ./alt-browsers
     ./appimage
     ./blockbench
+    ./clonehero
     ./discord
     ./gnome
     ./kde
