@@ -11,7 +11,7 @@
 		enable = true;
 		theme = {
 			package = pkgs.breeze-gtk; # Breeze GTK theme package
-			name = "Breeze";           # Use Breeze theme
+			name = "Breeze Dark";           # Use Breeze theme
 		};
 		iconTheme = {
 			package = pkgs.breeze-icons; # Breeze icons package
