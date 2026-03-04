@@ -10,7 +10,7 @@
     ./kde
     ./librewolf
     ./lossless
-    ./mangohud
+    #   ./mangohud
     ./obs-studio
     ./protonup-qt
     ./resources
