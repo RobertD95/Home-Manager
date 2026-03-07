@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 {
         services = {
                 hyprpaper = { enable = true; package = pkgs.hyprpaper; };
