@@ -3,15 +3,14 @@
         services = {
                 hyprpaper = { 
                         enable = true;
-                        package = pkgs.hyprpaper;
                         settings = {
                                 preload = [
-                                        "/home/robby/Pictures/Games/TLoZ/OOT.jpg"
-                                        "/home/robby/Pictures/Games/FFXIV/FireWorks.png"
+                                        "${/home/robby/Pictures/Games/TLoZ/OOT.jpg}"
+                                        "${/home/robby/Pictures/Games/FFXIV/FireWorks.png}"
                                 ];
                                 wallpapaer = [
-                                        "DP-1, /home/robby/Pictures/Games/TLOZ/OOT.jpg"
-                                        "HDMI-A-1, /home/robby/Pictures/Games/FFXIV/FireWorks.png"
+                                        "DP-1, ${/home/robby/Pictures/Games/TLOZ/OOT.jpg}"
+                                        "HDMI-A-1,${/home/robby/Pictures/Games/FFXIV/FireWorks.png}"
                                 ];
                         };
                 };
