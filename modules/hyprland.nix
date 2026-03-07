@@ -11,17 +11,17 @@
         services = {
                 hyprpaper = { 
                         enable = true;
-                        settings = {
-                                preload = [
-                                        "${~/Pictures/Games/TLoZ/OOT.jpg}"
-                                        "${~/Pictures/Games/FFXIV/FireWorks.png}"
-                                ];
-                                wallpapaer = [
-                                        "DP-1, ${~/Pictures/Games/TLOZ/OOT.jpg}"
-                                        "HDMI-A-1,${~/Pictures/Games/FFXIV/FireWorks.png}"
-                                ];
-                        };
-                };
+#                       settings = {
+#preload = [
+#                                       "$HOME/Pictures/Games/TLoZ/OOT.jpg"
+#                                       "$HOME/Pictures/Games/FFXIV/FireWorks.png"
+#                               ];
+#                               wallpapaer = [
+#                                       "DP-1, $HOME/Pictures/Games/TLOZ/OOT.jpg"
+#                                       "HDMI-A-1,$HOME/Pictures/Games/FFXIV/FireWorks.png"
+#                               ];
+#                       };
+               };
                 hyprsunset = { enable = true; package = pkgs.hyprsunset; };
                 hyprpolkitagent = { enable = true; package = pkgs.hyprpolkitagent; };
         };
