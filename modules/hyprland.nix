@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+        wayland.windowManager.hyprland = { enable = true; package = null; systemd.enable = false; xwayland.enable = true; };
         
         services = {
                 hyprpaper = { enable = true; package = pkgs.hyprpaper; };
