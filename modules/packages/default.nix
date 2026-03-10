@@ -5,7 +5,6 @@
     ./appimage
     ./blockbench
     ./clonehero
-    ./discord
     ./gnome
     ./kde
     ./librewolf
