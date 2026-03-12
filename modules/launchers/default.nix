@@ -1,7 +1,6 @@
 { ... }:
 {
   imports = [
-    ./bottles
     ./heroic
     ./hytale
     ./lutris
