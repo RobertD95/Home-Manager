@@ -12,6 +12,7 @@
     ./lossless
     ./mangohud
     ./obs-studio
+    ./obsidian
     ./protonup-qt
     ./resources
     ./telegram
