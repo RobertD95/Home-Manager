@@ -16,6 +16,7 @@
     ./protonup-qt
     ./resources
     ./telegram
+    ./timeline
     ./usbutils
     ./vlc
     ./vscodium
