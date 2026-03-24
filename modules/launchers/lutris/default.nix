@@ -3,14 +3,23 @@
         programs = {
                 lutris = {
                         enable = true;
-                        package = pkgs.lutris.overrideAttrs (old: {
+                        package = pkgs.stdenv.mkDerivation {
+                                pname = "lutris";
+                                version = "git";
                                 src = pkgs.fetchFromGitHub {
                                         owner = "lutris";
                                         repo = "lutris";
-                                        rev = "v0.5.22";
-                                        sha256 = "sha256-4mNknvfJQJEPZjQoNdKLQcW4CI93D6BUDPj8LtD940A=";
+                                        rev = "master";
+                                        sha256 = "";
                                 };
-                        });
+                                buildPhase = "true";
+                                installPhase = ''
+                                        runHook preInstall
+                                        mkdir -p $out
+                                        cp -r $src/* $out/
+                                        runHook postInstall 
+                                '';
+                        };                                      
                 };
         };
 }
