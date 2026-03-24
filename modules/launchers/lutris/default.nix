@@ -1,20 +1,19 @@
-{ pkgs, inputs, config, ... }:
+{ pkgs, ... }:
 let
-        ver = "v0.5.22";
-        hash = "";
+        hash = "sha256-4mNknvfJQJEPZjQoNdKLQcW4CI93D6BUDPj8LtD940A=";
 in
 {
         programs = {
                 lutris = {
                         enable = true;
-                        package = (pkgs.lib.makeOverridable pkgs.lutris).override {
+                        package = pkgs.lutris.overrideAttrs (old: {
                                 src = pkgs.fetchFromGitHub {
                                         owner = "lutris";
                                         repo = "lutris";
-                                        rev = ver;
+                                        rev = "master";
                                         sha256 = hash;
                                 };
-                        };                                      
+                        });
                 };
         };
 }
