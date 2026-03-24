@@ -1,24 +1,19 @@
 { pkgs, inputs, config, ... }:
+let
+        ver = "v0.5.22";
+        hash = "";
+in
 {
         programs = {
                 lutris = {
                         enable = true;
-                        package = pkgs.stdenv.mkDerivation {
-                                pname = "lutris";
-                                version = "git";
+                        package = (pkgs.lib.makeOverridable pkgs.lutris).override {
                                 src = pkgs.fetchFromGitHub {
                                         owner = "lutris";
                                         repo = "lutris";
-                                        rev = "master";
-                                        sha256 = "";
+                                        rev = ver;
+                                        sha256 = hash;
                                 };
-                                buildPhase = "true";
-                                installPhase = ''
-                                        runHook preInstall
-                                        mkdir -p $out
-                                        cp -r $src/* $out/
-                                        runHook postInstall 
-                                '';
                         };                                      
                 };
         };
