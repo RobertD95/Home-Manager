@@ -17,6 +17,7 @@
     ./resources
     ./telegram
     ./timeline
+    ./timer
     ./usbutils
     ./vlc
     ./vscodium
