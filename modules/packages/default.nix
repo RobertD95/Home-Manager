@@ -6,6 +6,7 @@
     ./blockbench
     ./calculator
     ./clonehero
+    ./gimp
     ./gnome
     ./kde
     ./librewolf
