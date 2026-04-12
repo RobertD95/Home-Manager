@@ -9,6 +9,7 @@
     ./gimp
     ./gnome
     ./kde
+    ./libre-office
     ./librewolf
     ./lossless
     ./mangohud
